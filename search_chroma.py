@@ -2,7 +2,7 @@ from embed_store_chroma import use_model_embed
 from langchain_chroma import Chroma
 from embed_store_chroma import embedding_model_name
 
-persist_dir = './chroma_db_java_notes'
+persist_dir = './wellsFargo'
 
 def vector_data_search_config() -> Chroma:
     vector_data_search = Chroma(

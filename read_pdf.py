@@ -1,11 +1,11 @@
-from langchain_community.document_loaders import PyPDFLoader;
+from langchain_community.document_loaders import PyPDFLoader, PyPDFDirectoryLoader
 
 pdf_path = "./wellsFargoStatments/012524WellsFargo.pdf"
 total_words = []
 
 def pdf_loader(src_path):
     print("...inside read_pdf.pdf_loader method...");
-    src_loader = PyPDFLoader(src_path)
+    src_loader = PyPDFDirectoryLoader(src_path)
     src_pages = src_loader.load()
     print("...returning pdf loader method...")
     return src_pages

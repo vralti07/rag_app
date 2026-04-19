@@ -2,16 +2,16 @@ from search_chroma import similarity_search
 from langchain_ollama import OllamaLLM
 
 #your query or question 
-query = 'is c++ better than java'
+query = 'get me all zelle transaction made  Sohini Koripelly'
 
 #top k results
-k = 4 
+k = 10 
 
 #context, meaning model should below given context to answer, 
 #not go beyond the scope of context and hulluciante
 context = similarity_search(query, k) 
 
-ollama_model_name = "mistral:latest"
+ollama_model_name = "gpt-oss:20b"
 
 def set_ollama_model(model_name :str) -> OllamaLLM:
     ollama = OllamaLLM(model=model_name)
