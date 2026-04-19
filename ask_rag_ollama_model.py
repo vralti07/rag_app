@@ -2,7 +2,7 @@ from search_chroma import similarity_search
 from langchain_ollama import OllamaLLM
 
 #your query or question 
-query = 'get me all zelle transaction made  Sohini Koripelly'
+query = 'get me all zelle transaction made by Sohini Koripelly'
 
 #top k results
 k = 10 
