@@ -3,11 +3,11 @@ from read_pdf import pdf_loader
 from langchain_core.documents import Document
 
 chunk_size = 1000
-chunk_overlap = 200 
+chunk_overlap = 100 
 separators=["\n\n","\n"," ",""]
 
 #pdf_path = "./wellsFargoStatments/012524WellsFargo.pdf"
-pdf_path =  "./wellsFargoStatments/javanotes5.pdf"
+#pdf_path =  "./wellsFargoStatments/javanotes5.pdf"
 
 
 def long_overlap(prev :str, curr :str) -> int:

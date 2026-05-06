@@ -2,7 +2,7 @@ from chunk_pdf import create_chunks
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
-pdf_path = "./wellsFargoStatments"
+pdf_path = "./javanotes"
 embedding_model_name = "sentence-transformers/all-MiniLM-L6-v2"
 model_kwargs = {"device": "cpu"}
 
@@ -23,7 +23,7 @@ def use_model_embed(embedding_model_name :str) -> HuggingFaceEmbeddings:
 
 
 
-persist_directory = "./wellsFargo"
+persist_directory = "./hound_of_baskerville"
 
 if __name__ == "__main__":
     page_content_list = []
